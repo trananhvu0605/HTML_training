@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="/Project3/img/logo.png" alt="">
+    </header>
+    <div class="order">
+        <h1 class="header">Your order from KFC</h1>
+
+        <ul id="order-items">
+            <li class="order-item">
+                <span class="name">Pizza 001</span>
+                <span class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1"/>
+                    <button>+</button>
+                </span>
+
+                <span class="price">
+                    <span>$7.99</span>
+                <button>x</button>
+                </span>
+            </li>
+            <li class="order-item">
+                <span class="name">Pizza 002</span>
+                <span class="quantity">
+                    <button>-</button>
+                    <input type="number" value="1"/>
+                    <button>+</button>
+                </span>
+
+                <span class="price">
+                    <span>$7.99</span>
+                <button>x</button>
+                </span>
+            </li>
+            <li class="order-item">
+                <span class="name">Pizza 003</span>
+                <span class="quantity">
+                    <button name="dec">-</button>
+                    <input type="number" value="1"/>
+                    <button name="inc">+</button>
+                </span>
+
+                <span class="price">
+                    <span>$7.99</span>
+                <button name="delete" class="btn-delete">x</button>
+                </span>
+            </li>
+
+        </ul>
+
+        <button id="btn-add">Add Food</button>
+
+        <div class="order-summary">
+            <p>Subtotal <span id="sub-total" class="money">$13.99</span></p>
+            <p>Shipping <span id="shipping" class="money">$3</span></p>
+            <p>Total <span id="total" class="money">$16.99</span></p>
+        </div>
+        <button id="btn-checkout">Checkout</button>
+    </div>
+</body>
+<script src="/Project3/script.js"></script>
+
+</html>

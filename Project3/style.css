@@ -1,0 +1,107 @@
+html {
+    background: linear-gradient(100deg, #ffbb00 0%, yellow 100%);
+}
+
+body {
+    width: 50rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+header {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    background: rgba(255, 73, 36, 0.83);
+    flex-basis: 20rem;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    position: relative;
+    background: white;
+    border-radius: 50%;
+}
+
+.order {
+    padding: 1rem;
+    flex: 1;
+    background: white;
+    border-radius: 0 0 1rem 1rem;
+    padding-top: 1rem;
+}
+
+.order .header {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 1000;
+}
+
+.order button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.order .order-item {
+    font-size: 1.25rem;
+    font-weight: 500;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.order .order-item .name {
+    flex-basis: 10rem;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.order .order-item .quantity {
+    flex-basis: 30rem;
+}
+
+.order .order-item .quantity input {
+    width: 30px;
+    position: relative;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    width: 15rem;
+    height: 2rem;
+}
+
+.order .order-item .price {
+    flex-basis: 10rem;
+}
+
+.order .order-summary {
+    padding: 1rem;
+    margin: 1.5rem;
+    background: whitesmoke;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
+.order .money {
+    float: right;
+}
+
+.order #btn-add {
+    margin-top: 1.5rem;
+    border: 1px solid gray;
+    width: 18rem;
+    background: white;
+}
+
+.order #btn-checkout {
+    width: 100%;
+    background: red;
+    color: aliceblue;
+}
