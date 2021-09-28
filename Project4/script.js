@@ -1,31 +1,23 @@
-let index = 0;
-const slideContainer = $('.slides')
-const slideImages = [...$$('.slide')]
+var slideIndex = 0;
+showSlides(slideIndex);
 
-const IMG_WIDTH = 400
-slideContainer.style.width = `
-        $ { slideImages.length * IMG_WIDTH }
-        px `
-
-
-
-function next() {
-    if (index < slideImages.length - 1) {
-        index++
-    } else {
-        index = 0
-    }
-    slideContainer.style.transform = `translateX(-${IMG_WIDTH*index}px)`
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-function next() {
-    if (index < slideImages.length - 1) {
-        index++
-    } else {
-        index = 0
-    }
-    slideContainer.style.transform = `translateX(-${IMG_WIDTH*index}px)`
+function currentSlide(n) {
+    showSlides(slideIndex = n);
 }
-$('#next').addEventListener('click', () => {
-    next()
-})
+
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000);
+}
