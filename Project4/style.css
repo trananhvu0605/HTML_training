@@ -1,0 +1,24 @@
+body {
+    width: 600px;
+    height: 400px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+}
+
+.control {
+    flex-basis: 100px;
+}
+
+.slide-container {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide-container .slides .slide {
+    display: flex;
+    transition: 0.5s all;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
