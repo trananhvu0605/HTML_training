@@ -1,29 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
     <title>SlideShow</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-    <button id="prev" class="control">Prev</button>
-    <div class="slide-container">
-        <div class="slides">
-            <img src="https://64.media.tumblr.com/a22dda63a0e8494c72014ba494697cad/3107f3becb2c1c93-84/s1280x1920/63adcda31e4e6c9a9c99d2a99d848838ee398f2c.jpg" class="slide" alt="">
-            <img src="https://64.media.tumblr.com/7c367a2afa980cc707c235dba9209f91/tumblr_ptjwbdpM0b1qzer7p_1280.png" class="slide" alt="">
-            <img src="https://64.media.tumblr.com/126ac5aa7f2ac01ff40c5ddc4aa5dc88/tumblr_oq9eestVEW1qbd81ro1_1280.jpg" class="slide" alt="">
-            <img src="https://64.media.tumblr.com/831f5ccd1485dc422ce50451c87a5907/tumblr_oq057wgqY31qbd81ro1_1280.jpg" class="slide" alt="">
-            <img src="https://64.media.tumblr.com/2e92492b4ef515124540a47aeb987e07/tumblr_oq057oN7le1qbd81ro1_1280.jpg" class="slide" alt="">
-            <img src="https://64.media.tumblr.com/e8dadc184fe67cb00511e3e243f5513f/tumblr_oq057bxGTL1qbd81ro1_1280.jpg" class="slide" alt="">
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://64.media.tumblr.com/a22dda63a0e8494c72014ba494697cad/3107f3becb2c1c93-84/s1280x1920/63adcda31e4e6c9a9c99d2a99d848838ee398f2c.jpg" style="width:100%; height: 65rem;">
+            <div class="text">Caption Text</div>
         </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://64.media.tumblr.com/7c367a2afa980cc707c235dba9209f91/tumblr_ptjwbdpM0b1qzer7p_1280.png" style="width:100%; height: 65rem;">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://64.media.tumblr.com/126ac5aa7f2ac01ff40c5ddc4aa5dc88/tumblr_oq9eestVEW1qbd81ro1_1280.jpg" style="width:100%; height: 65rem;">
+            <div class="text">Caption Four</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://64.media.tumblr.com/e8dadc184fe67cb00511e3e243f5513f/tumblr_oq057bxGTL1qbd81ro1_1280.jpg" style="width:100%; height: 65rem;">
+            <div class="text">Caption Five</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
     </div>
-    <button id="next" class="control">Next</button>
+    <script src="/Project4/script.js"></script>
+
 </body>
-<script language="JavaScript" src="/Project4/script.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 </html>
